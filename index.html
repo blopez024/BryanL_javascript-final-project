@@ -1,13 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>B's Dictionary 📕</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <div id="app">
+      <div id="container">
+        <header class="header">
+          <div class="left">
+            <div class="book">
+              <img src="./public/book50.png" alt="" srcset="" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="dice">
+              <img src="./public/dice50.png" alt="" srcset="" />
+            </div>
+            <div class="fonts">
+              <div class="custom-select-wrapper">
+                <select class="custom-select" name="fonts" id="fonts">
+                  <option value="codystar">Codystar</option>
+                  <option value="general">General Sans</option>
+                  <option value="inter">Inter</option>
+                  <option value="playfair">Playfair Display</option>
+                  <option value="roboto">Roboto</option>
+                </select>
+                <svg
+                  class="select-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M7 10l5 5 5-5H7z" fill="#333" />
+                </svg>
+              </div>
+            </div>
+
+            <div class="color-theme">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="">Search Bar</div>
+          <div class="content">
+            <div class="word">Apple sound pronunciation</div>
+            <div>noun de</div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
