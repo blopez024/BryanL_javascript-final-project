@@ -12,14 +12,11 @@
       <div id="container">
         <header class="header">
           <div class="left">
-            <div class="book">
-              <img src="./public/book50.png" alt="" srcset="" />
-            </div>
-          </div>
-          <div class="right">
             <div class="dice">
               <img src="./public/dice50.png" alt="" srcset="" />
             </div>
+          </div>
+          <div class="right">
             <div class="fonts">
               <div class="custom-select-wrapper">
                 <select class="custom-select" name="fonts" id="fonts">
@@ -45,14 +42,32 @@
                 <input type="checkbox" />
                 <span class="slider round"></span>
               </label>
+              <img src="./public/moon.svg" alt="" srcset="" height="25px" />
             </div>
           </div>
         </header>
         <main>
-          <div class="">Search Bar</div>
+          <div id="searchbar" class="searchbar">
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Search Dictionary..."
+            />
+            <button>🔍</button>
+          </div>
           <div class="content">
-            <div class="word">Apple sound pronunciation</div>
-            <div>noun de</div>
+            <div class="word">WORD</div>
+            <div class="pronunciation">pronunciation</div>
+            <div class="parts-of-speech">parts-of-speech</div>
+            <div class="meaning">
+              meaning
+              <ul></ul>
+            </div>
+            <div class="synonyms">
+              Synonyms
+              <ul></ul>
+            </div>
+            <div>Source: wiki</div>
           </div>
         </main>
       </div>
@@ -60,3 +75,5 @@
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>
+
+<!-- Borrowed Key: 497f069e-3608-4b8e-8451-44a1302617aa -->
