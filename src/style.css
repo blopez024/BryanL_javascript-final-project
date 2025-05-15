@@ -128,10 +128,6 @@ table {
   border-spacing: 0;
 }
 
-/* div {
-  border: 0.5px dashed black;
-} */
-
 /* Custom CSS Properties */
 
 body {
@@ -299,5 +295,27 @@ input:checked + .slider:before {
 
   height: 100%;
   width: 25px;
+  cursor: pointer;
+}
+
+.word-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+.sound img {
+  border: 0.5px solid white;
+  border-radius: 50%;
+}
+
+.sound img:hover {
+  border: 0.5px solid #2196f3;
+  border-radius: 50%;
   cursor: pointer;
 }
