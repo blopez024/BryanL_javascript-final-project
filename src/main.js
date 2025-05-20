@@ -77,8 +77,6 @@ async function loadData(word) {
     try {
         const data = await formattedData(word);
 
-        console.log(data)
-
         errorDiv.classList.add('hideElement')
         mainDiv.classList.remove('hideElement');
 
