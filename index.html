@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./src/style.css" />
     <title>B's Dictionary 📕</title>
   </head>
+
   <body>
     <div id="app">
       <div id="container">
         <header class="header">
-          <div class="left">
-            <div class="dice">
+          <div class="left"><h1>📕B's Dictionary</h1></div>
+          <div class="right">
+            <div id="random" class="dice">
               <img src="./public/dice50.png" alt="" srcset="" />
             </div>
-          </div>
-          <div class="right">
-            <div class="fonts">
+            <!-- <div class="fonts">
               <div class="custom-select-wrapper">
                 <select class="custom-select" name="fonts" id="fonts">
                   <option value="codystar">Codystar</option>
@@ -35,15 +35,15 @@
                   <path d="M7 10l5 5 5-5H7z" fill="#333" />
                 </svg>
               </div>
-            </div>
+            </div> -->
 
-            <div class="color-theme">
+            <!-- <div class="color-theme">
               <label class="switch">
                 <input type="checkbox" />
                 <span class="slider round"></span>
               </label>
               <img src="./public/moon.svg" alt="" srcset="" height="25px" />
-            </div>
+            </div> -->
           </div>
         </header>
         <main>
@@ -53,20 +53,21 @@
               type="text"
               placeholder="Search Dictionary..."
             />
-            <button>🔍</button>
+            <button id="search-button">🔍</button>
           </div>
-          <div class="content">
+          <div id="main-content" class="content hideElement">
             <div class="word-content">
               <div>
                 <div class="word">
-                  <h1>Apple</h1>
+                  <h1 id="word"></h1>
                 </div>
                 <div class="pronunciation">
-                  <p>"/ˈæp.əl</p>
+                  <p id="pronunciation"></p>
                 </div>
               </div>
-              <div class="sound">
+              <div id="sound" class="sound">
                 <img
+                  id="sound"
                   src="./public/sound.svg"
                   alt=""
                   srcset=""
@@ -76,16 +77,21 @@
               </div>
             </div>
 
-            <div class="parts-of-speech">parts-of-speech</div>
+            <div class="parts-of-speech">
+              <span id="parts-of-speech"></span>
+            </div>
             <div class="meaning">
-              meaning
-              <ul></ul>
+              <ol id="meaning"></ol>
             </div>
-            <div class="synonyms">
-              Synonyms
-              <ul></ul>
+            <div id="image" class="image">
             </div>
-            <div>Source: wiki</div>
+          </div>
+          <div id="word-not-found" class="hideElement word-not-found">
+            <img src="./public/lost.gif" alt="" srcset="" />
+            <h2>
+              I'm sorry, the word you have typed in doesn't appear to be in my
+              dictionary.
+            </h2>
           </div>
         </main>
       </div>

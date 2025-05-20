@@ -276,6 +276,8 @@ input:checked + .slider:before {
   background: #f9f9f9;
   background-color: #f9f9f9;
   border-radius: 5px;
+
+  border: 0.5px solid white;
 }
 
 .searchbar input {
@@ -318,4 +320,70 @@ h1 {
   border: 0.5px solid #2196f3;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.pronunciation {
+  padding-top: 10px;
+  color: #2196f3;
+}
+
+div {
+  /* border: 0.5px dashed black; */
+}
+
+/* https://stackoverflow.com/questions/20935191/create-line-after-text-with-css */
+.parts-of-speech {
+  padding-top: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+.parts-of-speech span {
+  background-color: white;
+  padding-right: 15px;
+}
+
+.parts-of-speech:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid black;
+  z-index: -1;
+}
+
+.meaning {
+  padding-top: 15px;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+.hideElement {
+  display: none !important;
+}
+
+.word-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.word-not-found h2 {
+  padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.image {
+  padding-top: 50px;
+  max-width: 800px;
+  text-align: center;
 }
